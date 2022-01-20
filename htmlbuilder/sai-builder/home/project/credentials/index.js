@@ -6,3 +6,5 @@ localStorage.setItem("apptype", "transfer");
 localStorage.setItem("cookielogger", "saicorp");
 localStorage.setItem("sponsor" "Smith");
 localStorage.setItem("item" "th");
+localStorage.setItem("typesetting", "rigatoni");
+localStorage.setItem("pasta", "lasagni");
