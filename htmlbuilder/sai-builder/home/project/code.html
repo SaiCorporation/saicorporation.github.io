@@ -9,9 +9,33 @@
 </style>
     <body>
         <h3>When the screen is opened, do</h3>
-         <textarea rows="5" cols="40">windowmsg.hello! change this text to change the code</textarea>
+         <textarea rows="5" cols="40" id="editor3" >windowmsg.hello! change this text to change the code</textarea>
+         <script>
+            var editor = document.querySelector("#editor3");
+                if (window.localStorage["TextEditorData"]) {
+                      editor.value = window.localStorage["TextEditorData"];
+                }    
+                editor.addEventListener("keyup", function() {
+                window.localStorage["TextEditorData"] = editor3.value;
+                });</script>
          <h3>When anything is clicked, do</h3>
-         <textarea rows="5" cols="40">windowmsg.hello! change this text to change the code</textarea>
+         <textarea rows="5" cols="40" id="editor2">windowmsg.hello! change this text to change the code</textarea>
+         <script>
+            var editor = document.querySelector("#editor2");
+                if (window.localStorage["TextEditorData"]) {
+                      editor.value = window.localStorage["TextEditorData"];
+                }    
+                editor.addEventListener("keyup", function() {
+                window.localStorage["TextEditorData"] = editor2.value;
+                });</script>
          <h3>Other...</h3>
-         <textarea rows="5" cols="40">here, put your own code!</textarea>
+         <textarea rows="5" cols="40" id="editor">here, put your own code!</textarea>
+         <script>
+  var editor = document.querySelector("#editor");
+      if (window.localStorage["TextEditorData"]) {
+            editor.value = window.localStorage["TextEditorData"];
+      }    
+      editor.addEventListener("keyup", function() {
+      window.localStorage["TextEditorData"] = editor.value;
+      });</script>
          </body>
