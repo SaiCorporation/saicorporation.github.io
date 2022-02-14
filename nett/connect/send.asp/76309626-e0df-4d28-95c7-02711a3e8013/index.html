@@ -9,6 +9,15 @@
 <body>
   <h3>SAI nett</h3>
   <h1>Send a document</h1>
-  <input></input>
+  <input id="edaitor3"></input>
+   <script>
+            var editor = document.querySelector("#edaitor3");
+                if (window.localStorage["TextEditorData"]) {
+                      editor.value = window.localStorage["TextEditorData"];
+                }    
+                editor.addEventListener("keyup", function() {
+                window.localStorage["TextEditorData"] = edaitor3.value;
+                });</script>
 </body>
 </html> 
+       
