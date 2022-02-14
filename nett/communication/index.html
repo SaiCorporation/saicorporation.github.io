@@ -1,0 +1,19 @@
+<style>
+  body{
+    color: white;
+    background-color: black;
+    font-family: verdana;
+  }
+</style>
+<body>
+<h3>Communicate</h3>
+  <input id="edaitor3">Enter the text you want to communicate between.</input>
+   <script>
+            var editor = document.querySelector("#eaaitor3");
+                if (window.localStorage["TextEditorData"]) {
+                      editor.value = window.localStorage["TextEditorData"];
+                }    
+                editor.addEventListener("keyup", function() {
+                window.localStorage["TextEditorData"] = eaaitor3.value;
+                });</script>
+</body>
