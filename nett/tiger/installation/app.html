@@ -1,0 +1,32 @@
+   <style>
+   .mybtn-right{
+text-align: right;
+}
+       .application {
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        background-color: blue;
+    }
+      .right {
+          text-align: right;
+          }
+    </style>
+   <div class="application">
+        <h3>Finish</h3>
+        <h5>Complete the Tiger Development Kit installation</h5>
+        <p>At your downloads folder, there should be a file called tiger.nett. Please upload that file below.</p>
+        <input type="file" id="myFile" name="filename">
+        <p>Now, click the download button below to get the full nett package for the nett application to process.</p>
+        <button onclick="install()">Download</button>
+        <div class="mybtn-right">
+        <button onclick="next()">Next</button>
+        </div>
+        <script>
+         function install() {
+           window.location.href = "https://saicorporation.github.io/nett/tiger/installation/tiger.zip";
+            }
+         function next() {
+           window.location.replace = "https://saicorporation.github.io/nett/tiger/installation/next.html";
+           }
+            </script>
+    </div>
